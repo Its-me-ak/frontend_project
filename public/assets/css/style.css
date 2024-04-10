@@ -23,7 +23,7 @@ html {
     visibility: hidden;
     background: transparent;
     float: right;
-    top: .8rem;
+    top: 1.8rem;
 }
 
 .burger-line {
@@ -50,6 +50,10 @@ html {
 
 .burger-line:nth-child(3) {
     top: 1rem;
+}
+
+.logo-mobile{
+    display: none;
 }
 
 .overlay {

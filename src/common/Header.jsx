@@ -24,6 +24,9 @@ const Header = () => {
         <>
             <div className="container mx-auto">
                 <div className={header ? 'header-main bg-black animate-slidedown fixed top-0 left-0 w-[100%] h-auto z-50 px-14' : 'header-main absolute top-0 left-0 w-[100%] h-auto z-50 px-14'}>
+                    <div className="logo-mobile">
+                        <img src="assets/img/Logo.png" className='h-20' alt="" />
+                    </div>
                     <div className="burger" id="burger" onClick={()=> handleToggleMenu()}>
                         <span className="burger-line"></span>
                         <span className="burger-line"></span>
