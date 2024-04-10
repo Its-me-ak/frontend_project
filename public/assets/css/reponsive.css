@@ -1,0 +1,150 @@
+@media screen and (min-width: 577px) and (max-width:991px) {
+  .grid-main {
+    grid-template-rows: 300px auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-3 {
+    grid-row: 3 / span 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 500px;
+  }
+
+  .item-4 {
+    height: 500px;
+    grid-row: 3 / span 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .item-5 {
+    grid-column: 1/-1;
+    grid-row: 2 / span 1;
+  }
+
+  .item-6 {
+    grid-column: 1/-1;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .program-grid .image2 img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .header-main{
+    padding: 3rem 0rem;
+  }
+  .burger {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    z-index: 111111;
+    opacity: 0;
+    overflow-y: auto;
+    visibility: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: #000;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-menu.active {
+    left: 0rem;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+  }
+
+  .header-left ul,
+  .header-right ul {
+    flex-direction: column;
+  }
+
+  .overlay.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .logo {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .header-left {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+
+  .header-right {
+    order: 3;
+  }
+
+  .cancel-icon{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid-main {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .item-3 {
+    grid-row: 6 / span 6;
+    grid-column: 1/ -1;
+    height: 450px;
+  }
+
+  .item-4 {
+    height: 450px;
+    grid-row: 12 / span 12;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .item-5 {
+    grid-column: 1/-1;
+    grid-row: 3 / span 3;
+  }
+
+  .item-6 {
+    grid-column: 1/-1;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .sector-link {
+    border-bottom: 1px solid;
+  }
+}
